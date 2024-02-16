@@ -1,0 +1,349 @@
+//mi clase en Java
+
+public class HolaMundo {
+    public static void main(String args[]){
+        //Definimos la variable 
+        int miVariableEntera = 10;
+        System.out.println(miVariableEntera);
+        //Modificamos el valor de la variable
+        miVariableEntera = 5;
+        System.out.println(miVariableEntera);
+    
+        String miVariableCadena = "Saludos ";
+        System.out.println(miVariableCadena);
+        
+        miVariableCadena="Adios";
+        System.out.println(miVariableCadena);
+    
+        
+            //Var va a Inferir en las variables deJava
+        var miVariableEntera2 = 15;
+        System.out.println(miVariableEntera2);
+        
+        var miVariableCadena2 = "micadena 2";
+        System.out.println(miVariableCadena2);
+        System.out.println("miVariableCadena2 = " + miVariableCadena2);
+    
+        //tipos de variables 
+        var miVariable = 1;
+        var _miVariable = 2;
+        var $miVariable = 3;
+        //var áMiVariable = 4; permitido no recomendado
+        //var #miVariable = 5; no permitido
+        
+        
+        
+    
+    }
+    
+}
+clase 2
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        var usuario = "wilson";
+        var titulo = "Ingeniero";
+        var union = usuario + " " + titulo;
+        System.out.println("union = " + union);
+
+        var i = 3;
+        var j = 4;
+        
+        System.out.println(i + j);
+        System.out.println( i + j + usuario);//evaluacion de izquierda a derecha realiza suma
+        System.out.println(usuario + i +j );//contexto cadena, todo es una cadena
+        System.out.println(usuario + (i +j) );//uso de parentesis, evalua en orden de parentesis 
+    }
+
+}
+clase de caracteres
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+
+        var nombre = "wilson";
+
+        System.out.println("nueva linea: \n" +nombre);
+        System.out.println("Tabulador: \t" +nombre);
+        System.out.println("Retroceso: \b" + nombre);
+        System.out.println("Comilla simple: \'"+nombre+"\'");
+        System.out.println("comilla doble:\" "+nombre+" \"");
+    
+    }
+}
+
+--lectura de datos
+
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        System.out.println("Escribe tu nombre:");
+        Scanner consola= new Scanner(System.in);
+        var usuario = consola.nextLine();
+        System.out.println("Usuario = " +usuario);
+        System.out.println("escribe el titulo");        
+var titulo = consola.nextLine();
+        System.out.println("Resultado:" + titulo +" "+ usuario);
+    }
+}
+tarea 1
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        System.out.println("Proporcione el titulo:");
+        Scanner consola = new Scanner(System.in);
+        var titulo = consola.nextLine();
+        System.out.println("Proporciona el Autor");
+        var autor = consola.nextLine();
+        System.out.println(titulo + " Fue escrito por " + autor);
+    }
+}
+numeros enteros primitivos
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        /*
+         * Tipos primitos enteros:
+         * 1. Byte 8bits
+         * 2. Short 16bits
+         * 3. Int 32bits
+         * 4. Long 64bits
+         */
+        byte numeroByte = (byte) 129;
+        System.out.println("valor Byte" + numeroByte);
+        System.out.println("Valor minimo Byte:" + Byte.MIN_VALUE);
+        System.out.println("valor maximo Byte:" + Byte.MAX_VALUE);
+        short numeroShort = (short)32768;    
+        System.out.println("numero short:" +numeroShort);
+        System.out.println("numero minimo Short:" + Short.MIN_VALUE);
+        System.out.println("numero maximo short:" +Short.MAX_VALUE);
+        int numeroInt = (int)2147483648L    ;
+        System.out.println("numero short:" +numeroInt);
+        System.out.println("numero minimo Short:" + Integer.MIN_VALUE);
+        System.out.println("numero maximo short:" +Integer.MAX_VALUE);
+        Long numeroLong = (Long)9223372036854775807L   ;
+        System.out.println("numero short:" +numeroLong);
+        System.out.println("numero minimo Short:" + Long.MIN_VALUE);
+        System.out.println("numero maximo short:" +Long.MAX_VALUE);
+        
+        ;  
+
+    }
+}
+numeros flotantes
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        /*
+         * Tipos primitivos enteros:
+         * 1. Float 8bits
+         * 2. Double 16bits
+         */
+        float   numeroFloat = (Float)10.0F;
+        System.out.println("Numero Float:" +numeroFloat);
+        System.out.println("valor minimo Float:" +Float.MIN_VALUE);
+        System.out.println("valor maximo Float:" + Float.MAX_VALUE);
+        Double   numeroDouble = 10.0;
+        System.out.println("Numero Float:" +numeroDouble);
+        System.out.println("valor minimo Float:" +Double.MIN_VALUE);
+        System.out.println("valor maximo Float:" + Double.MAX_VALUE);
+
+    
+    }
+}
+tipo Var
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+    var numeroEntero=10;
+    System.out.println("numero entero:" +numeroEntero);
+
+    var numeroDouble=10.0;
+    System.out.println("numero Double:" +numeroDouble);
+
+    var numeroFloat = 10.0F;
+    System.out.println("numero Float:"+numeroFloat);
+    }
+}
+tipo char
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        char miCaracter = 'a';
+        System.out.println("caracter:" +miCaracter);
+
+        char varChar= '\u0021';
+        System.out.println("varchar:"+varChar);
+
+        char varCharDecimal=33;
+        System.out.println("var char decimal:"+varCharDecimal);
+
+        char varCharSimbolo= '!';
+        System.out.println("varCharSimbolo"+varCharSimbolo);
+
+
+        var var1Char= '\u0021';
+        System.out.println("var1char: "+var1Char);
+
+        var varChar1Decimal=33;
+        System.out.println("varchar1decimal: "+varChar1Decimal);
+
+        var varChar1Simbolo= '!';
+        System.out.println("varCharSimbolo: "+varChar1Simbolo);
+        
+    }
+}
+TIPOS BOOLEANOS
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        boolean varBoolean = true;
+        System.out.println("boolean ="+varBoolean);
+        if (varBoolean){
+            System.out.println("la bandera es verdadera");
+        }
+        else{
+            System.out.println("la bandera es falsa");
+        }
+        var edad = 10;
+        //var esAdulto = edad >=18;
+        if (edad >=18){
+            System.out.println("Eres mayor de edad");
+        }
+        else{
+            System.out.println("Eres menor de edad ");
+        }
+    }
+}
+
+variables
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        //convertir tipo string a un tipo int
+        var edad= Integer.parseInt("20");
+        System.out.println("edad="+(edad+1));
+
+        var valorPi = Double.parseDouble("3.1416");
+        System.out.println("valorPi=" +valorPi);
+
+        //Pedir un valor
+        var consola = new Scanner(System.in);
+        // System.out.println("Proporciona tu edad:");
+        // edad = Integer.parseInt(consola.nextLine());
+        // System.out.println("edad = "+edad);
+
+
+        var edadText = String.valueOf(10);
+        System.out.println("edadTexto="+edadText);
+
+        var caracter="hola".charAt(1);
+        System.out.println("caracter: "+caracter);
+    
+        System.out.println("Proporciona un caracter:");
+        caracter = consola.nextLine().charAt(0);
+        System.out.println("caracter ="+caracter);
+    
+        var nombre2 = "juan";
+        System.out.println(nombre2);
+        nombre = "carlos";
+        System.out.println(nombre2);
+    }
+}
+tarea 2 ejercicio libreria
+
+
+import java.util.Scanner;
+
+//mi clase en Java
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        String nombre;
+        int libroId;
+        double precio;
+        boolean envio;
+
+        var consola = new Scanner(System.in);
+        
+        System.out.println("Proporcione el nombre:");
+        nombre = consola.nextLine();
+        System.out.println("Proporciona el ID");
+        libroId = Integer.parseInt(consola.nextLine());
+        System.out.println("Proporciona el precio:");
+        precio= Double.parseDouble(consola.nextLine());
+        
+        System.out.println("envio gratuito:(true or false)");
+        envio=Boolean.valueOf(consola.nextLine());
+
+        System.out.println(nombre+" #"+libroId);
+        System.out.println("Precio: $" +precio);
+        System.out.println("Envio Gratuito: " + envio);        
+    }
+}
+ejemplo del profe
+
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         System.out.println("Proporciona el nombre:");
+//         String nombre = scanner.nextLine();
+//         System.out.println("Proporciona el id:");
+//         int id = Integer.parseInt(scanner.nextLine());
+//         System.out.println("Proporciona el precio:");
+//         double precio = Double.parseDouble(scanner.nextLine());
+//         System.out.println("Proporciona el envio gratuito:");
+//         boolean envioGratuito = Boolean.parseBoolean(scanner.nextLine());
+ 
+//         System.out.println(nombre + " #" + id);
+//         System.out.println("Precio: $" + precio);
+//         System.out.println("Envio Gratuito: " + envioGratuito);
+//     }
+// }
