@@ -45,6 +45,6 @@ public class HolaMundo {
  
         System.out.println(nombre + " #" + id);
         System.out.println("Precio: $" + precio);
-        System.out.println("Envio Gratuito: " + envioGratuito);
+        System.out.println("Envio Gratuito : " + envioGratuito);
     }
 }
