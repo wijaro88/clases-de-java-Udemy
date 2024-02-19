@@ -7,24 +7,15 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         int a = 3, b = 2;
-        var resultado = a + b;
-        System.out.println("resultado = " + resultado);
+        int c= a+ 5 - b;
+        System.out.println("resultado c = " + c);
 
-        resultado = a - b;
-        System.out.println("resultado resta = " + resultado);
-
-        resultado = a * b;
-        System.out.println("resultado multiplicacion = " + resultado);
-
-        var resultado2 = 3.0 / b;
-        System.out.println("resultado = " + resultado2);
-
-        resultado = a % b;
-        System.out.println("resultado modulo = " + resultado);
-
-        if (b % 2 == 0)
-            System.out.println("numero par");
-        else
-            System.out.println("numero impar");
+        a+=1;//a = a+1
+        System.out.println("a"+a);
+        a+=3;
+        System.out.println("a= "+a);
+        a-=2;
+        System.out.println("a="+a);
+        
     }
 }
