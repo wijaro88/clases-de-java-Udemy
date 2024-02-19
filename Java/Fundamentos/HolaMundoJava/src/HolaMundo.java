@@ -1,20 +1,16 @@
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // mi clase en Java
 
 public class HolaMundo {
 
     public static void main(String args[]) {
-     var a = -1;
-     var valorMinimo = 0;
-     var valorMaximo=10;
+        var resultado = (1 > 2) ? "verdadero" : "falso";
+        System.out.println("resultado = " + resultado);
 
-     var resultado = a >= 0 && a<=10; //&& And ||or
-     if (resultado){
-        System.out.println("Dentro de Rango");
-     }else{
-        System.out.println("Fuera de Rango");
-     }
+        var numero= 8;
+        resultado=( numero % 2==0 )?"par":"impar";
+        System.out.println("resultado ="+resultado);
     }
 }
