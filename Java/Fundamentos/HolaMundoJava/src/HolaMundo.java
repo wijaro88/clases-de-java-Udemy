@@ -6,16 +6,40 @@ import java.util.Scanner;
 public class HolaMundo {
 
     public static void main(String args[]) {
-        int a = 3, b = 2;
-        int c= a+ 5 - b;
-        System.out.println("resultado c = " + c);
+        var a = 3;
+        var b = -a;
+        System.out.println("a= " + a);
+        System.out.println("b= " + b);
 
-        a+=1;//a = a+1
-        System.out.println("a"+a);
-        a+=3;
-        System.out.println("a= "+a);
-        a-=2;
-        System.out.println("a="+a);
-        
+        var c = true;
+        var d = !c;
+        System.out.println("c=" + c);
+        System.out.println("d=" + d);
+
+        // incremento
+        // 1. preincremento( simbolo antes de la variable)
+        var e = 3;
+        var f = ++e;// primero incrementa la variable y despues su valor
+        System.out.println("e="+e);
+        System.out.println("f="+f);
+        // 2. postincremento
+
+        var g = 5;
+        var h = g++;// primero se utiliza aelvalor de la variable y luego se inccrementa
+
+        System.out.println("g="+g);//teniamos pendiente un incremento
+        System.out.println("h="+h);
+// decremento
+var i=2;
+var j=--i;
+System.out.println("i=" +i);
+System.out.println("j="+j);
+
+var k =4;
+var l = k--;//primero se usala variable y queda pendiente el decremento
+
+System.out.println("k="+k);
+System.out.println("l="+l);
+
     }
 }
