@@ -7,15 +7,16 @@ public class HolaMundo {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Proporciona el Alto del Rectangulo:");
-        int Alto = Integer.parseInt(scanner.nextLine());
-        System.out.println("Proporciona el Ancho del Rectangulo:");
-        int Ancho = Integer.parseInt(scanner.nextLine());
-        var area=Alto*Ancho;
-        var perimetro=(Alto+Ancho)*2;
-        System.out.println("El Area del Rectangulo es: "+area);
-        System.out.println("El Perimetro del Rectangulo es: "+perimetro);
-
-            
+        System.out.println("Proporciona un numero:");
+        int numero1 = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona otro numero:");
+        int numero2 = Integer.parseInt(scanner.nextLine());
+        if (numero1 == numero2) {
+            System.out.println("Los numeros son iguales");
+        } else if (numero1 < numero2) {
+            System.out.println("el numero mayor es:" + numero2);
+        } else {
+            System.out.println("el numero mayor es:" + numero1);
         }
+    }
 }
