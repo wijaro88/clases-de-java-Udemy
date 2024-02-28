@@ -1,22 +1,27 @@
-
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // mi clase en Java
 
 public class HolaMundo {
 
     public static void main(String args[]) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Proporciona un numero:");
-        int numero1 = Integer.parseInt(scanner.nextLine());
-        System.out.println("Proporciona otro numero:");
-        int numero2 = Integer.parseInt(scanner.nextLine());
-        if (numero1 == numero2) {
-            System.out.println("Los numeros son iguales");
-        } else if (numero1 < numero2) {
-            System.out.println("el numero mayor es:" + numero2);
-        } else {
-            System.out.println("el numero mayor es:" + numero1);
+        var mes = 12;
+        var estacion = "Estacion desconocida";
+
+        switch(mes){
+            case 1: case 2: case 12:
+            estacion="Invierno";
+            break;
+            case 3: case 4: case 5:
+            estacion="Primavera";
+            break;
+            case 6: case 7: case 8:
+            estacion="Verano";
+            break;
+            case 9: case 10: case 11:
+            estacion="Otonio";
+            break;
         }
+        System.out.println("Estacion: " +estacion);
     }
 }
