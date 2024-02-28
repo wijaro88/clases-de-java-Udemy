@@ -1,19 +1,21 @@
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 // mi clase en Java
 
 public class HolaMundo {
 
-    public static void main(String args[]) {    
-        var x= 5;
-        var y=10;
-        var z= ++x + y--;
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporciona el Alto del Rectangulo:");
+        int Alto = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el Ancho del Rectangulo:");
+        int Ancho = Integer.parseInt(scanner.nextLine());
+        var area=Alto*Ancho;
+        var perimetro=(Alto+Ancho)*2;
+        System.out.println("El Area del Rectangulo es: "+area);
+        System.out.println("El Perimetro del Rectangulo es: "+perimetro);
 
-        var resultado=4+5*6/3;
-        System.out.println(resultado);
-    }
+            
+        }
 }
