@@ -681,4 +681,21 @@ public class HolaMundo {
         }
          
             
+
+}
+ejercicio 40 while
+
+public class HolaMundo {
+
+    public static void main(String args[]) {
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Proporcionar la nota entre  0 a 10:");
+        // int nota = Integer.parseInt(scanner.nextLine());
+        var contador = 0 ;
+        while ( contador < 3){
+            System.out.println("contador:"+contador);
+            contador++;
+        }
+       
+    }            
 }
